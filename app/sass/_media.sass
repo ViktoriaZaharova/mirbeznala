@@ -1,0 +1,235 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1480px)
+  .advantages-section-box .box-text
+    max-width: 250px
+
+  .advantages-section-box__img
+    max-width: 280px
+    min-width: 280px
+
+  .new-clients-box__body
+    padding: 30px 20px
+
+  .list-characteristics span
+    margin: 0 0 0 25px
+
+  .callback-img
+    max-width: 520px
+    &:before
+      width: 120px
+      height: 300px
+      left: 10px
+    &:after
+      width: 60px
+      height: 120px
+
+
+@media only screen and (max-width: 1400px)
+  .new-clients-box
+    .btn
+      width: 100%
+      margin: 0 0 10px
+
+  .callback-content
+    max-width: 500px
+
+@media only screen and (max-width: 1200px)
+  .main-home-content
+    max-width: 700px
+
+  .main-home h1
+    font-size: 30px
+
+  .advantages-section-box
+    width: 100%
+    margin: 0 0 30px
+    .list-check
+      width: calc(100% - 260px)
+
+  .list-check
+    max-width: none
+
+  .advantages-section-box .box-text
+    max-width: none
+    width: calc(100% - 300px)
+
+  .callback-img
+    max-width: 480px
+    margin: 0 0 0 auto
+
+  .callback-content
+    margin: 68px 0 54px
+    max-width: 440px
+
+  .callback
+    h2
+      margin: 0 0 25px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .main-home-content
+    max-width: 540px
+
+  .main-home
+    padding: 60px 0
+
+  .new-clients-box
+    margin: 0 auto
+
+  .panel_heading h4
+    font-size: 16px
+
+  .block_title
+    padding: 20px
+
+  .block_hover
+    padding: 0 20px 20px
+    font-size: 14px
+
+  .question-box
+    margin: 0 0 30px
+    h3
+      font-size: 20px
+
+  .question
+    padding: 60px 0 20px
+    h2
+      margin: 0 0 30px
+
+  .callback-content
+    max-width: none
+    margin: 30px 0
+
+  .form-callback
+    max-width: 700px
+
+  .callback-img
+    margin: 0 auto
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .advantages-section-box
+    padding: 30px
+    .list-check
+      width: 100%
+    &__img
+      position: relative
+      bottom: 0
+      top: 0
+      right: 0
+      transform: none
+      margin: 20px auto 0
+      max-width: 260px
+      min-width: auto
+    &__body
+      padding: 0
+    &:nth-child(2)
+      .advantages-section-box__img
+        transform: none
+        top: 0
+        margin: 20px auto
+    .box-text
+      width: 100%
+      margin: 0 auto 20px
+    .btn-group
+      margin: 0 auto
+
+  .advantages-section
+    padding: 50px 0
+
+  .new-clients-box__title
+    padding: 20px 10px
+
+  .new-clients-box .list-characteristics
+    font-size: 14px
+
+  .list-characteristics span
+    margin: 0 0 0 15px
+
+  .my-section h2
+    font-size: 24px
+
+  .new-clients-slider
+    margin: 40px 0 0
+
+  .contact-section-box
+    padding: 30px
+
+  .contact-section-box__item
+    width: 100%
+    margin: 0 0 30px
+
+  .contact-section-box__callback
+    max-width: 280px
+
+  .question-box
+    width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .main-home
+    background: #fff
+    h1
+      font-size: 26px
+      margin: 0 0 30px
+
+  .main-bottom
+    flex-direction: column
+    align-items: flex-start
+    .btn
+      margin: 20px 0 0
+      order: 1
+
+  .contact-section-box__callback
+    max-width: none
+
+  .contact-section-box__img
+    position: relative
+    margin: 0 -30px -60px auto
+    right: 0
+    bottom: 0
+
+  .form-callback
+    flex-direction: column
+    align-items: flex-start
+    button
+      margin: 10px auto 0
+    label
+      width: 100%
+
+  
+@media only screen and (max-width: 480px)
+  .list-messengers
+    width: 100%
+    margin: 10px 0 0
+    li
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
+
+  .contact-section-box__item, .contact-section-box__callback
+    font-size: 16px
+
+  .contact-section-box
+    margin: 40px 0
+
+  .callback-img
+    &:before
+      width: 80px
+      height: 200px
+      left: 40px
+    &:after
+      top: 30px
+      left: 0
+      width: 50px
+      height: 110px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
