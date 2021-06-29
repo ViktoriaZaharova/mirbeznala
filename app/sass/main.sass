@@ -231,6 +231,9 @@ label
 .color-black
   color: #000000
 
+.color-red
+  color: #DD0E0E
+
 .index-block__title-wrapper
   width: 100%
   display: flex
@@ -1094,6 +1097,177 @@ label
   display: flex
   align-items: center
   font-size: 13px
+
+//personal-compilation
+.personal-compilation
+  padding: 66px 0 80px
+  h2
+    margin: 0
+
+.personal-compilation-wrapper
+  border: 1px solid #E6E8E0
+    radius: 12px
+  overflow: hidden
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #F8FAF0, #F8FAF0)
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 50px 57px 8px 66px
+
+.personal-compilation-content
+  max-width: 455px
+  width: 100%
+  .box-text
+    display: flex
+    align-items: flex-start
+    font-size: 18px
+    color: #000
+    margin: -40px 0 0
+    p
+      max-width: 229px
+      margin: 72px 0 0
+
+.personal-compilation-content__img
+  max-width: 232px
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+  &:before, &:after
+    content: ''
+    position: absolute
+    opacity: 0.3
+    background: url("../img/sale.svg") no-repeat center
+      size: 100%
+    width: 79px
+    height: 79px
+  &:before
+    left: -182px
+    bottom: 30px
+  &:after
+    opacity: .15
+    left: -200px
+    bottom: 120px
+    width: 50px
+    height: 50px
+  img
+    max-height: 369px
+    overflow: hidden
+    position: relative
+    z-index: 1
+
+.img-sale
+  position: absolute
+  left: -87px
+  bottom: 62px
+
+.personal-compilation-test
+  width: calc(100% - 455px)
+  padding: 0 0 0 79px
+  h3
+    font-size: 18px
+    line-height: 130%
+    width: 100%
+    text-align: center
+    padding: 0 0 10px
+    margin: 0 auto 36px
+    font-weight: 600
+    border-bottom: 1px solid #E9E9E9
+
+.personal-compilation-slider__item
+  width: 100%
+  margin: 0 0 24px
+  h4
+    width: 100%
+    text-align: center
+    margin: 0 0 33px
+  .checkbox
+    width: calc(33.3% - 12px)
+    margin: 0 0 24px
+
+.checkbox
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  background: linear-gradient(0deg, #F8FAF0, #F8FAF0), #FFFFFF
+  border-radius: 4px
+  color: #000000
+  font-size: 16px
+  line-height: 130%
+  padding: 20px 25px
+  cursor: pointer
+
+.input-checkbox
+  display: none
+
+.checkbox-custom
+  margin: 0 12px 0 0
+  width: 29px
+  height: 29px
+  min-width: 29px
+  border: 1px solid #2AA549
+    radius: 50%
+  transition: .3s ease
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 13px
+    height: 10.5px
+    transition: .3s ease
+    filter: brightness(0) invert(1)
+
+.input-checkbox:checked + .checkbox-custom
+  background: $accent
+  &:before
+    background: url("../img/check.svg") no-repeat center
+      size: 100%
+
+.personal-compilation-slider
+  .owl-nav
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    button.owl-prev, button.owl-next
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 18px 24px !important
+      color: #0E0E0E
+      font-size: 16px
+      width: auto
+      height: auto
+      position: relative
+      min-width: 210px
+      border: 1px solid #2AA549
+        radius: 4px
+      &:hover
+        font-weight: bold
+        color: #fff
+        background: $accent
+        .btn-icon
+          stroke: #fff
+    .btn-icon
+      fill: none
+      stroke: $accent
+      width: 19px
+      height: 12px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 12px 0 0
+    button.owl-next
+      margin: 0 0 0 18px
+      .btn-icon
+        margin: 0 0 0 12px
+
 
 
 @import "media"

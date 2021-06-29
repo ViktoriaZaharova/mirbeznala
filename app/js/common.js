@@ -67,6 +67,13 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.personal-compilation-slider').owlCarousel({
+        nav: true,
+        items: 1,
+        dots: false,
+        navText: ["<div class='btn-icon'><svg class='svg-icon'><use xlink:href='img/sprite.svg#arrow-left'></use></svg></div><div class='btn-text'>Назад</div>","<div class='btn-text'>Далее</div><div class='btn-icon'><svg class='svg-icon'><use xlink:href='img/sprite.svg#arrow-right'></use></svg></div>"]
+    });
 });
 
 

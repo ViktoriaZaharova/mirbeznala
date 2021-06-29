@@ -51,6 +51,11 @@
   .card-product
     padding: 20px
 
+  .personal-compilation-test
+    padding: 0 0 0 30px
+
+  .personal-compilation-wrapper
+    padding: 30px 30px 10px
 
 
 @media only screen and (max-width: 1200px)
@@ -113,6 +118,20 @@
 
   .ready-made-solutions
     padding: 50px 0 30px
+
+  .personal-compilation-test
+    padding: 0
+    width: 100%
+
+  .personal-compilation-content
+    max-width: none
+    margin: 0 0 30px
+    .box-text
+      margin: 0 auto
+      justify-content: center
+
+  .personal-compilation-wrapper
+    padding: 30px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -228,6 +247,9 @@
   .question-box
     width: 100%
 
+  .personal-compilation-slider__item .checkbox
+    width: calc(50% - 12px)
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 670px)
   .card-product
@@ -306,6 +328,35 @@
   .tabs li
     width: 100%
     margin-right: 0
+
+  .personal-compilation-slider .owl-nav
+    flex-direction: column
+    align-items: center
+    button.owl-next, button.owl-prev
+      width: 100%
+    button.owl-next
+      margin: 10px 0 0
+
+  .personal-compilation-slider__item .checkbox
+    width: 100%
+    margin: 0 0 15px
+
+  .checkbox
+    font-size: 14px
+    padding: 10px
+
+  .personal-compilation-content .box-text
+    flex-direction: column
+    align-items: flex-start
+    margin: 20px 0 0
+    p
+      margin: 0 0 20px
+      font-size: 16px
+      max-width: none
+
+  .personal-compilation-content__img
+    margin: 0 0 0 auto
+    max-width: 180px
 
 @media only screen and (max-width: 480px)
   .list-messengers
