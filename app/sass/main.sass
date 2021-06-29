@@ -143,6 +143,7 @@ label
   border: 1px solid #E6E8E0
   color: #0E0E0E
   padding: 15px 20px
+  font-weight: normal
   &:hover
     border-color: $accent
     color: #0E0E0E
@@ -677,7 +678,95 @@ label
     top: 112px
     left: -43px
 
+//staff
+.staff
+  padding: 100px 0 65px
+  .box-text-title
+    margin: 0 0 75px
+    color: #000000
+    max-width: 904px
+    width: 100%
+
+.staff-box
+  position: relative
+  overflow: hidden
+  z-index: 1
+  border-radius: 12px
+  color: #fff
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.12%, rgba(0, 0, 0, 0.6) 115.27%)
+  &:hover
+    &:before
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(180deg, rgba(0, 0, 0, 0) 63.12%, rgba(0, 0, 0, 0.6) 115.27%)
+    .staff-box-characteristics
+      display: block
+
+.staff-box__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.staff-box__content
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  padding: 30px
+  font-size: 18px
+
+.staff-box-characteristics
+  margin: 20px 0 0
+  transition: .3s ease
+  display: none
+  &:first-child
+    display: block
+  &:first-child
+    margin: 0
+  p
+    margin: 0 0 1px
+  a
+    color: #fff
+  h3
+    font-size: 22px
+    font-weight: 600
+
+.staff-slider, .reviews-slider
+  .owl-nav
+    button.owl-prev, button.owl-next
+      top: 50%
+      transform: translate(0,-50%)
+
+//reviews
+.reviews
+  padding: 104px 0 0
+  h2
+    margin: 0 0 57px
+  .btn-group
+    width: 100%
+    margin: 52px 0 0
+    justify-content: center
+    .btn
+      padding: 10px 16px
+      margin: 0 12px 0 0
+
+.reviews-video
+  width: 100%
+  height: 574px
+  display: flex
+  align-items: center
+  justify-content: center
+  iframe
+    width: 100%
+    height: 1005px
+
+
 
 
 @import "media"
-// Всегда в конце
