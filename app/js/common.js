@@ -85,3 +85,17 @@ function accordeon() {
 
 accordeon();
 
+// tabs
+$(document).ready(function ($) {
+    $('.tabs li a').click(function (e) {
+        e.preventDefault();
+        $('.tabs li a').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content').removeClass('active');
+
+        var selectTab = $(this).attr("href");
+
+        $(selectTab).addClass('active');
+    });
+});
+

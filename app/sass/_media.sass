@@ -27,6 +27,17 @@
       width: 60px
       height: 120px
 
+  .btn-add-card
+    font-size: 12px
+
+  .ready-made-solutions h2
+    max-width: none
+    margin: 0 0 20px
+
+  .tabs
+    margin: 0 auto 0 0
+    li
+      margin: 0 10px 0 0
 
 @media only screen and (max-width: 1400px)
   .new-clients-box
@@ -36,6 +47,11 @@
 
   .callback-content
     max-width: 500px
+
+  .card-product
+    padding: 20px
+
+
 
 @media only screen and (max-width: 1200px)
   .main-home-content
@@ -81,6 +97,22 @@
 
   .list-dots
     font-size: 16px
+
+  .card-product
+    width: calc(50% - 15px)
+
+  .tab_container
+    margin: 40px 0 0
+
+  .tabs
+    margin: 0 auto 10px 0
+    li
+      margin: 0 10px 10px 0
+      &:last-child
+        margin: 0 0 10px
+
+  .ready-made-solutions
+    padding: 50px 0 30px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -197,6 +229,13 @@
     width: 100%
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 670px)
+  .card-product
+    width: 100%
+
+  .card-product__img
+    height: 220px
+
 @media only screen and (max-width: 576px)
   .main-home
     background: #fff
@@ -260,6 +299,13 @@
 
   .complex-services-box__content
     padding: 20px
+
+  .price
+    flex-wrap: wrap
+
+  .tabs li
+    width: 100%
+    margin-right: 0
 
 @media only screen and (max-width: 480px)
   .list-messengers

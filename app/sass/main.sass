@@ -231,6 +231,13 @@ label
 .color-black
   color: #000000
 
+.index-block__title-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
 
 //home
 .main-home
@@ -885,7 +892,208 @@ label
 .ready-made-solutions
   background: #F4F4F4
   padding: 68px 0 40px
+  h2
+    max-width: 376px
+    margin: 0
 
+
+.links
+  display: flex
+  align-items: center
+  font-size: 14px
+  color: #0E0E0E
+  &:hover
+    color: $accent
+  .svg-icon
+    width: 6px
+    height: 12px
+    stroke: $accent
+    fill: none
+    margin: 0 0 0 9px
+
+.tabs
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  font-size: 18px
+  margin: 0 38px 0 auto
+  li
+    margin: 0 18px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #0E0E0E
+      display: flex
+      align-items: center
+      border: 1px solid #E6E8E0
+        radius: 4px
+      background: #ffff
+      padding: 13px 20px
+    .active
+      background: $accent
+      color: #fff
+      border-color: $accent
+      .tabs-links__icon
+        filter: brightness(0) invert(1)
+
+.tabs-links__icon
+  width: 24px
+  min-width: 24px
+  height: 22px
+  margin: 0 10px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .3s ease
+
+.tab_content
+  display: none
+  width: 100%
+
+.tab_content.active
+  display: flex
+  flex-wrap: wrap
+
+.tab_container
+  margin: 64px 0 0
+
+.card-product
+  background: #fff
+  width: calc(25% - 15px)
+  margin: 0 0 30px
+  position: relative
+  overflow: hidden
+  border: 1px solid transparent
+    radius: 12px
+  padding: 21px 28px 27px
+  cursor: pointer
+  transition: .3s ease
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 285px
+    margin: 22px auto 30px
+    img
+      max-height: 100%
+  &__title
+    color: #000000
+    font-size: 18px
+    font-weight: 600
+    line-height: 130%
+    min-height: 50px
+    margin: 0 0 10px
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &:hover
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12)
+    border: 1px solid #2AA549
+    .btn-add-card
+      background: $accent
+      border-color: $accent
+      color: #fff
+      .btn-icon
+        filter: brightness(0) invert(1)
+      .btn-text
+        display: block
+
+
+.btn-add-card
+  color: #fff
+  padding: 14px
+  font-size: 16px
+  font-weight: bold
+  .btn-text
+    display: none
+    transition: .3s ease
+  .btn-icon
+    width: 24px
+    height: 22px
+    min-width: 24px
+
+.btn-icon
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-text
+  margin: 0 0 0 8px
+
+
+.availability
+  width: 100%
+  margin: 0 0 22px
+  font-size: 13px
+  &:before
+    content: ''
+    display: inline-block
+    background: $accent
+    width: 6px
+    min-width: 6px
+    height: 6px
+    margin: 0 8px 0 0
+    border-radius: 50%
+
+
+.yes-availability
+  color: #39B41B
+
+.list-label
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 21px 26px
+  font-size: 12px
+  line-height: 100%
+  li
+    padding: 6px 10px
+    border-radius: 15px
+    margin: 0 7px 5px 0
+    &:last-child
+      margin-right: 0
+  .bg-orange-light
+    color: #EC6642
+  .bg-violet-light
+    color: #9160E7
+  .bg-red-light
+    color: #E71E63
+
+.bg-red-light
+  background: #FDE9F0
+
+.price-default
+  margin: 0 0 3px
+  font-size: 18px
+  font-weight: 600
+  color: #000
+
+.new-price
+  background: linear-gradient(0deg, #EDFBF0, #EDFBF0), #E8FDED
+  padding: 4px
+  color: #2AA549
+
+.old-price
+  text-decoration-line: line-through
+  color: #000
+  margin: 0 10px 0 0
+
+.price-wrapper
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.price
+  display: flex
+  align-items: center
+  font-size: 13px
 
 
 @import "media"
