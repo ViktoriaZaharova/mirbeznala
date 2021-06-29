@@ -146,7 +146,8 @@ label
   font-weight: normal
   &:hover
     border-color: $accent
-    color: #0E0E0E
+    background: $accent
+    color: #fff
 
 .btn-group
   display: flex
@@ -765,6 +766,62 @@ label
   iframe
     width: 100%
     height: 1005px
+
+//offers-partner
+.offers-partner
+  background: linear-gradient(0deg, #F4F4F4, #F4F4F4), linear-gradient(0deg, #FFF7F7, #FFF7F7)
+  padding: 68px 0 48px
+  h2
+    margin: 0 0 57px
+
+.offers-partner-row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.offers-partner-box
+  width: calc(25% - 15px)
+  padding: 32px 10px 177px 37px
+  position: relative
+  background: #fff
+  z-index: 1
+  overflow: hidden
+  transition: .3s ease
+  border-radius: 12px
+  margin: 0 0 30px
+  &:hover
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12)
+  h3
+    font-size: 22px
+    font-weight: 600
+    line-height: 130%
+  .btn
+    margin: 28px 0 0
+  &__img
+    position: absolute
+    max-width: 288px
+    height: 206px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    bottom: 0
+    right: 0
+    z-index: -1
+    &:before
+      content: ''
+      position: absolute
+      border-radius: 50%
+      z-index: -1
+      background: linear-gradient(0deg, #EDF4CF, #EDF4CF)
+      width: 578px
+      height: 578px
+      bottom: -436px
+      right: -230px
+    img
+      max-height: 100%
+
 
 
 
