@@ -4,33 +4,26 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1480px)
-  .new-clients-box__body
-    padding: 30px 20px
-
   .list-characteristics span
     margin: 0 0 0 25px
-
-  .callback-img
-    max-width: 520px
-    &:before
-      width: 120px
-      height: 300px
-      left: 10px
-    &:after
-      width: 60px
-      height: 120px
-
-  .btn-add-card
-    font-size: 12px
 
   .ready-made-solutions h2
     max-width: none
     margin: 0 0 20px
 
   .tabs
-    margin: 0 auto 0 0
+    margin: 0 0 30px
     li
       margin: 0 10px 0 0
+
+  .new-clients
+    padding: 180px 0
+
+  .new-clients-box .panel_heading .block_hover
+    padding: 20px
+
+  .reviews
+    padding: 180px 0 0
 
 @media only screen and (max-width: 1400px)
   .new-clients-box
@@ -39,16 +32,70 @@
       margin: 0 0 10px
 
   .callback-content
-    max-width: 500px
+    width: calc(100% - 448px)
+
+  .callback-img
+    margin: 0
 
   .card-product
     padding: 20px
 
+  .main-home__img
+    max-width: 300px
 
+  .main-home-content
+    width: calc(100% - 300px)
+
+  .main-home__box
+    width: 25%
+    font-size: 16px
+    padding: 0 10px
+    br
+      display: none
+
+  .main-home__footer
+    margin: 30px 0 0
+
+  .tabs-wrapper
+    padding: 30px
+
+  .tabs
+    margin: 0 auto 10px 0
+    li
+      margin: 0 7px 10px 0
+      &:last-child
+        margin: 0 0 10px
+
+  .card-product__title
+    font-size: 28px
+    line-height: normal
+    margin: 0 0 10px
+
+  .card-product__category
+    font-size: 18px
+
+  .list-decor
+    font-size: 18px
+
+  .complex-services-box__img
+    max-width: 200px
+
+  .complex-services-box__content
+    width: calc(100% - 200px)
+    padding: 0 20px 0 0
+
+  .complex-services-box
+    font-size: 20px
+
+  .reviews
+    padding: 130px 0 0
+
+  .staff
+    padding: 170px 0
 
 @media only screen and (max-width: 1200px)
   .main-home
-    padding: 120px 0
+    padding: 70px 0 0
 
   .main-home-content
     max-width: 700px
@@ -56,24 +103,60 @@
   .main-home h1
     font-size: 30px
 
+  .box-text-title
+    font-size: 20px
+    margin: 0 0 40px
 
-  .list-check
-    max-width: none
+  .main-bottom
+    flex-direction: column
+    align-items: flex-start
+    margin: 40px 0 0
+    .btn
+      margin: 0 0 15px
+      max-width: 300px
+      width: 100%
 
+  .main-home .subtitle
+    font-size: 20px
 
+  .my-section h2
+    font-size: 30px
+    line-height: normal
+    margin: 0 0 20px
+
+  .acquiring-rates-box
+    width: calc(25% - 20px)
+    height: 240px
+    padding: 20px
+    font-size: 20px
+    margin: 0 0 20px
+    &__percent
+      font-size: 30px
+      line-height: normal
+
+  .banks-item
+    width: 25%
+
+  .list-banks
+    justify-content: flex-start
+
+  .question, .acquiring-rates, .new-clients, .staff
+    padding: 100px 0
 
   .callback-img
-    max-width: 480px
-    margin: 0 0 0 auto
+    width: 300px
+    height: 300px
+
 
   .callback-content
-    margin: 68px 0 54px
-    max-width: 440px
+    width: calc(100% - 300px)
 
   .callback
     h2
       margin: 0 0 25px
 
+  .advantages-section-box
+    font-size: 18px
 
 
   .complex-services-box__content
@@ -87,20 +170,60 @@
 
   .card-product
     width: calc(50% - 15px)
+    margin: 0 0 30px
 
-  .tab_container
-    margin: 40px 0 0
+  .my-slider .owl-nav button.owl-prev
+    left: 0
 
-  .tabs
-    margin: 0 auto 10px 0
-    li
-      margin: 0 10px 10px 0
-      &:last-child
-        margin: 0 0 10px
+  .my-slider .owl-nav button.owl-next
+    right: 0
+
+  .new-clients-box
+    margin: 0 auto
+
+  .form-callback label
+    max-width: 300px
+
+  .phone
+    font-size: 24px
+
+  .phone-icon
+    max-width: 30px
+
+  .form-callback
+    margin: 20px 0 0
+    h3
+      font-size: 20px
+
+  .complex-services-box
+    padding: 20px
+
+  .complex-services-box__img
+    max-width: 140px
+
+  .complex-services-box__content
+    width: calc(100% - 140px)
+
+  .complex-services
+    padding: 70px 0 0
 
   .ready-made-solutions
     padding: 50px 0 30px
 
+  .reviews
+    padding: 60px 0 0
+
+  .contact-section-box
+    width: 100%
+    padding: 0
+
+  .map
+    width: 100%
+    max-width: none
+    margin: 30px 0 0
+
+  .contact-section
+    margin: 0 0 40px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -108,7 +231,10 @@
     max-width: 540px
 
   .main-home
-    padding: 60px 0
+    padding: 60px 0 0
+
+  .acquiring-rates-box
+    width: calc(50% - 10px)
 
   .new-clients-box
     margin: 0 auto
@@ -116,14 +242,12 @@
   .panel_heading h4
     font-size: 16px
 
-  .block_title
-    padding: 20px
 
   .block_hover
-    padding: 0 20px 20px
     font-size: 14px
 
-
+  .advantages-section-box
+    width: 50%
 
   .question
     padding: 60px 0 20px
@@ -132,24 +256,37 @@
 
   .callback-content
     max-width: none
-    margin: 30px 0
+
+    width: 100%
 
   .form-callback
     max-width: 700px
 
   .callback-img
-    margin: 0 auto
+    margin: 20px auto 0
 
-
+  .company-proposal h3
+    font-size: 24px
+    line-height: normal
+    margin: 0 0 30px
 
   .complex-services
     padding: 60px 0 40px
 
   .complex-services-box
     width: 100%
+    min-height: 220px
+    &__content
+      max-width: none
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
+  .main-home__box
+    width: 50%
+    margin: 0 0 20px
+
+
 
   .advantages-section
     padding: 50px 0
@@ -178,6 +315,23 @@
   .contact-section-box__callback
     max-width: 280px
 
+  .banks-item
+    width: 33.3%
+
+  .advantages-section-box
+    margin: 0 0 40px
+
+  .contact-section-box__footer
+    flex-direction: column
+    align-items: flex-start
+
+  .contact-section-box__callback
+    max-width: none
+    margin: 0 0 30px
+    width: 100%
+
+  .contact-section-box
+    padding: 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 670px)
@@ -185,22 +339,47 @@
     width: 100%
 
   .card-product__img
-    height: 220px
+    height: 200px
+
+  .card-product__body
+    height: auto
+
+  .card-product__category .list-decor
+    min-height: auto
+
+  .question, .acquiring-rates
+    padding: 60px 0
+
+  .acquiring-rates-box
+    width: 100%
+    height: 200px
+
+  .advantages-section-box
+    width: 100%
+    br
+      display: none
+    &__img
+      width: 65px
+    &__body
+      width: calc(100% - 65px)
 
 @media only screen and (max-width: 576px)
   .main-home
     background: #fff
-    padding: 50px 0
+    padding: 50px 0 0
     h1
       font-size: 26px
       margin: 0 0 30px
 
-  .main-bottom
-    flex-direction: column
-    align-items: flex-start
-    .btn
-      margin: 20px 0 0
-      order: 1
+  .main-home__img
+    max-width: 200px
+
+  .main-home-content
+    width: calc(100% - 200px)
+
+  .btn
+    height: 60px
+    font-size: 15px
 
   .contact-section-box__callback
     max-width: none
@@ -211,7 +390,14 @@
     button
       margin: 10px auto 0
     label
+      max-width: none
       width: 100%
+
+  .callback-content .list-messengers
+    margin: 10px 0 0
+    padding: 0
+    border: none
+    width: 100%
 
   .staff
     padding: 60px 0 40px
@@ -234,17 +420,6 @@
         margin: 0 0 10px
 
 
-
-  .complex-services-box
-    min-height: 550px
-    .list-dots
-      min-height: auto
-    .box-text-title
-      margin: 0 0 30px
-
-  .complex-services-box__content
-    padding: 20px
-
   .price
     flex-wrap: wrap
 
@@ -261,6 +436,25 @@
 
 
 @media only screen and (max-width: 480px)
+  .main-home__img
+    max-width: 300px
+    margin: 20px auto 0
+
+  .main-home-content
+    width: 100%
+
+  .main-home__box
+    width: 100%
+
+  .banks-item
+    width: 50%
+    height: auto
+    margin: 0 0 20px
+    padding: 0 5px
+
+  .list-banks
+    padding: 0
+
   .list-messengers
     width: 100%
     margin: 10px 0 0
@@ -272,17 +466,23 @@
   .contact-section-box__item, .contact-section-box__callback
     font-size: 16px
 
-  .contact-section-box
-    margin: 40px 0
 
-  .callback-img
-    &:before
-      width: 80px
-      height: 200px
-      left: 40px
-    &:after
-      top: 30px
-      left: 0
-      width: 50px
-      height: 110px
+
+  .complex-services-box
+    flex-direction: column
+    align-self: flex-start
+    &__content
+      width: 100%
+      padding: 0
+    .btn
+      margin: 0 auto
+    &__img
+      position: relative
+      right: 0
+      top: 0
+      height: auto
+      max-width: 200px
+      margin: 20px auto 0
+      transform: none
+
 
