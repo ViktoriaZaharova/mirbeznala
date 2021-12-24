@@ -68,12 +68,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.personal-compilation-slider').owlCarousel({
-        nav: true,
-        items: 1,
-        dots: false,
-        navText: ["<div class='btn-icon'><svg class='svg-icon'><use xlink:href='img/sprite.svg#arrow-left'></use></svg></div><div class='btn-text'>Назад</div>","<div class='btn-text'>Далее</div><div class='btn-icon'><svg class='svg-icon'><use xlink:href='img/sprite.svg#arrow-right'></use></svg></div>"]
-    });
 });
 
 
@@ -86,6 +80,7 @@ function accordeon() {
     }
 
     $('.panel_heading .block_title').on('click', function () {
+        $('.block_hover').slideUp().parent().removeClass('in');
         $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
     });
 }
