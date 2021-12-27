@@ -1246,7 +1246,8 @@ label {
 .tabs-wrapper {
   background: #F5F7F9;
   border-radius: 18px;
-  padding: 39px 39px 65px; }
+  padding: 39px 39px 65px;
+  width: 100%; }
 
 .tabs {
   display: -webkit-box;
@@ -1329,14 +1330,23 @@ label {
 
 .card-product {
   background: #fff;
-  width: calc(33.3% - 16px);
+  width: 100%;
+  min-height: 1182px;
+  margin: 0 auto 40px;
   position: relative;
   overflow: hidden;
   border-radius: 18px;
   padding: 27px 60px 37px;
   cursor: pointer;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .card-product__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1374,7 +1384,6 @@ label {
     margin: auto 0 0; }
   .card-product__body {
     width: 100%;
-    height: calc(100% - 267px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1495,6 +1504,7 @@ label {
   .callback-img {
     margin: 0; }
   .card-product {
+    min-height: 1050px;
     padding: 20px; }
   .main-home__img {
     max-width: 300px; }
@@ -1598,7 +1608,6 @@ label {
   .list-dots {
     font-size: 16px; }
   .card-product {
-    width: calc(50% - 15px);
     margin: 0 0 30px; }
   .my-slider .owl-nav button.owl-prev {
     left: 0; }
@@ -1675,13 +1684,17 @@ label {
     width: 100%;
     min-height: 220px; }
     .complex-services-box__content {
-      max-width: none; } }
+      max-width: none; }
+  .card-product {
+    min-height: 1100px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .main-home__box {
     width: 50%;
     margin: 0 0 20px; }
+  .card-product {
+    min-height: auto; }
   .advantages-section {
     padding: 50px 0; }
   .new-clients-box__title {

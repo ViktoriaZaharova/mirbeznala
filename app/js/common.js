@@ -68,6 +68,27 @@ $(document).ready(function () {
         }
     });
 
+    $('.card-product-slider').owlCarousel({
+        items: 3,
+        nav: true,
+        dots: false,
+        margin: 30,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0,
+            },
+            768: {
+                items: 2,
+                margin: 20,
+            },
+            1200: {
+                items: 3,
+            }
+        }
+    });
+
 });
 
 
